@@ -32,8 +32,9 @@ var express = require('express'),
  
    app.get('/articles/:id', function(req, res){
     var index = req.params.id;
-    var book = articles[index];
-    res.render("articles/show", {article:book});
+    var article = articles[index];
+    res.render("articles/show", {article:article});
+                                // variable your ejs with access/key : the data/value
   });
 
   app.get('/about', function(req,res){
