@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Daily News - About</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Daily Planet - New Article</title>
   </head>
 
   <body>
     <div class="container">
-      <form method="post" action="/books">
+      <div class="breadcrumbs">
+          <a href="/">Home</a>
+          <span> | </span>
+          <a href="/articles">All Articles</a>
+          <span> | </span>
+          <span>New Article</span>
+      </div>
+
+      <form method="post" action="/articles">
         <input type="text" name="article[title]" placeholder="Article Title"><br>
         <input type="text" name="article[author]" placeholder="Article Author"><br>
-        <textarea name="book[description]" placeholder="Article text"></textarea><br>
-        <button>Save Book</button>
+        <textarea name="article[text]" placeholder="Article text"></textarea><br>
+        <button>Save Article</button>
       </form>
     </div>
-
 
   </body>
 </html>

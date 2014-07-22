@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Planet - All Articles</title>
+  </head>
+
+  <body>
+     <div class="breadcrumbs">
+        <a href="/">Home</a>
+        <span> | </span>
+        <span>All Articles</span>
+    </div>
+
+    <h1>All Daily Planet Articles</h1>
+
+    <% articles.forEach(function(article) { %>
+      <div>  
+        <h2><%= article.title %></h2>
+        <p><%= article.author %></p>
+        <p><%= article.text %> </p>
+      </div>
+    <% }) %>
+
+    <div>
+      <a href="articles/new">Add a new article &raquo;</a>
+    </div>
+
+  </body>
+</html>
