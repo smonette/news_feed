@@ -2,7 +2,9 @@ var express = require('express'),
   ejs = require('ejs'),
   bodyParser = require('body-parser'),
   app = express();
-
+  
+  app.use("/styles", express.static(__dirname + '/styles'));
+  
   var articles = [
     { title: "10 Best Uses for Toothpaste", 
       author: "Jolene Blackbeard",

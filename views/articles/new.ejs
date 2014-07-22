@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Daily Planet - New Article</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+
   </head>
 
   <body>
@@ -13,12 +15,13 @@
           <span> | </span>
           <span>New Article</span>
       </div>
+      <h1>Add a New Article</h1>
 
       <form method="post" action="/articles">
         <input type="text" name="article[title]" placeholder="Article Title"><br>
         <input type="text" name="article[author]" placeholder="Article Author"><br>
         <textarea name="article[text]" placeholder="Article text"></textarea><br>
-        <button>Save Article</button>
+        <button class="addNewButton">Save Article</button>
       </form>
     </div>
 

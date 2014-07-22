@@ -2,23 +2,29 @@
 <html>
   <head>
     <title>Daily Planet - All Articles</title>
+      <link rel="stylesheet" type="text/css" href="/styles/style.css">
+
   </head>
 
   <body>
-    <div class="breadcrumbs">
-        <a href="/">Home</a>
-        <span> | </span>
-        <a href="/articles">All Articles</a>
-        <span> | </span>
-        <span><%= article.title %></span>
-    </div>
-    <h1>All Daily Planet Articles</h1>
+    <div class="container">
 
-      <div>  
-        <h2><%= article.title %></h2>
-        <p><%= article.author %></p>
-        <p><%= article.text %></p>
+      <div class="breadcrumbs">
+          <a href="/">Home</a>
+          <span> | </span>
+          <a href="/articles">All Articles</a>
+          <span> | </span>
+          <span><%= article.title %></span>
       </div>
+      <h1>All Daily Planet Articles</h1>
+
+        <div class="articleContain">  
+          <h2><%= article.title %></h2>
+          <p class="author"><%= article.author %></p>
+          <p><%= article.text %></p>
+        </div>
+    </div>
+    
 
   </body>
 </html>

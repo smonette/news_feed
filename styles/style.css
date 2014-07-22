@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F4F0EA;
+  color: #4d4d4d;
+}
+a {
+  text-decoration: none;
+  color:#6699FF;
+}
+
+a:hover {
+  color: #4E7EC4;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+p.author {
+  font-style: italic;
+}
+
+.articleContain {
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  border: none;
+  font-size: 14px;
+}
+.addNewButton {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #88AEFC;
+  border-bottom: 1px solid #4E7EC4;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: white !important;
+  cursor: pointer;
+}
+.addNewButton:hover,
+.addNewButton:active {
+  background-color: #6699FF;
+}
+form input, textarea {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 5px 0;
+}
+textarea{
+  width: 600px;
+  height: 200px;
+}
+
+
+
+
+
+

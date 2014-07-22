@@ -2,28 +2,30 @@
 <html>
   <head>
     <title>Daily Planet - All Articles</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
   </head>
 
   <body>
-     <div class="breadcrumbs">
-        <a href="/">Home</a>
-        <span> | </span>
-        <span>All Articles</span>
-    </div>
-
-    <h1>All Daily Planet Articles</h1>
-
-    <% articles.forEach(function(article) { %>
-      <div>  
-        <h2><%= article.title %></h2>
-        <p><%= article.author %></p>
-        <p><%= article.text %> </p>
+    <div class="container">
+       <div class="breadcrumbs">
+          <a href="/">Home</a>
+          <span> | </span>
+          <span>All Articles</span>
       </div>
-    <% }) %>
 
-    <div>
-      <a href="articles/new">Add a new article &raquo;</a>
+      <h1>All Daily Planet Articles</h1>
+
+      <% articles.forEach(function(article) { %>
+        <div class="articleContain">  
+          <h2><%= article.title %></h2>
+          <p class="author"><%= article.author %></p>
+          <p><%= article.text %> </p>
+        </div>
+      <% }) %>
+
+      <div>
+        <a href="articles/new" class="addNewButton">Add a new article &raquo;</a>
+      </div>
     </div>
-
   </body>
 </html>
